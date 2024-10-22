@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Fictif</title>
+    <!-- Lien vers le CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .menu-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menu-item h3 {
+            margin-top: 15px;
+            font-size: 1.75rem;
+        }
+
+        .menu-item p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        /* Section "À propos de nous" */
+        .about-section img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section En-tête -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Restaurant Fictif</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">À propos de nous</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Héros -->
+    <section class="hero-section" style="background-image: url('https://via.placeholder.com/1500x800'); background-size: cover; background-position: center; height: 100vh; display: flex; justify-content: center; align-items: center; color: white; text-align: center;">
+        <div class="container">
+            <h1>Découvrez Nos Délices</h1>
+            <a href="#" class="btn btn-primary">Voir le Menu</a>
+        </div>
+    </section>
+
+    <!-- Section Menu -->
+    <section class="menu-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Notre Menu</h2>
+            <div class="row">
+                <!-- Élément de menu 1 -->
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Plat 1">
+                    <h3>Salade César</h3>
+                    <p>Une salade fraîche avec du poulet grillé, de la laitue croquante, et une sauce César maison.</p>
+                    <p class="price">12,99€</p>
+                </div>
+                <!-- Élément de menu 2 -->
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Plat 2">
+                    <h3>Pâtes Carbonara</h3>
+                    <p>Pâtes crémeuses avec du bacon croustillant, des œufs et une sauce riche au parmesan.</p>
+                    <p class="price">15,99€</p>
+                </div>
+                <!-- Élément de menu 3 -->
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Plat 3">
+                    <h3>Steak Grillé</h3>
+                    <p>Steak juteux grillé à la perfection, accompagné de pommes de terre sautées et de légumes frais.</p>
+                    <p class="price">24,99€</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos de nous -->
+    <section class="about-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Colonne image -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://via.placeholder.com/600x400" alt="Notre Restaurant">
+                </div>
+                <!-- Colonne texte -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div>
+                        <h2>À propos de nous</h2>
+                        <p>
+                            Bienvenue au Restaurant Fictif, où la passion pour la cuisine se rencontre avec la convivialité.
+                            Notre équipe dédiée travaille sans relâche pour vous offrir une expérience culinaire inoubliable.
+                            Venez découvrir nos plats préparés avec des ingrédients frais et locaux, et laissez-vous séduire
+                            par l'ambiance chaleureuse de notre établissement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contactez-nous</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Restaurant Fictif. Tous droits réservés.</p>
+        <p>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </p>
+    </footer>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Icons Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
